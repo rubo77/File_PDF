@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.10.9" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Horde_Pdf</name>
+ <channel>pear.horde.org</channel>
+ <extends>File_PDF</extends>
+ <summary>PDF writer library</summary>
+ <description>A PDF generation library using only PHP, without requiring any external libraries.</description>
+ <lead>
+  <name>Jan Schneider</name>
+  <user>jan</user>
+  <email>jan@horde.org</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Mike Naberezny</name>
+  <user>mnaberez</user>
+  <email>mike@maintainable.com</email>
+  <active>no</active>
+ </lead>
+ <lead>
+  <name>Chuck Hagenbuch</name>
+  <user>chuck</user>
+  <email>chuck@horde.org</email>
+  <active>no</active>
+ </lead>
+ <date>2019-11-03</date>
+ <time>15:48:11</time>
+ <version>
+  <release>2.0.8</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+ <notes>
+* [mjr] PHP 7.4 compatibility fixes (Remi Collet &lt;remi@famillecollet.com&gt;, PR #1).
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="0d979b17ebb46a6914b08f30006934ac" name="doc/Horde/Pdf/CHANGES" role="doc" />
+   <file baseinstalldir="/" md5sum="321bf41f280cf805086dd5a720b37785" name="doc/Horde/Pdf/COPYING" role="doc" />
+   <file baseinstalldir="/" md5sum="b640415a481c7a735de76382d97697e5" name="lib/Horde/Pdf/Font/Courier.php" role="php" />
+   <file baseinstalldir="/" md5sum="b6b67aa84447c7a0a1a42e4dbefdc594" name="lib/Horde/Pdf/Font/Courierb.php" role="php" />
+   <file baseinstalldir="/" md5sum="c1f3874c8e401fc82fb8fdf7d4347707" name="lib/Horde/Pdf/Font/Courierbi.php" role="php" />
+   <file baseinstalldir="/" md5sum="1baf69ec6e38e59b0ca3df8757d98b71" name="lib/Horde/Pdf/Font/Courieri.php" role="php" />
+   <file baseinstalldir="/" md5sum="4af130e4bf2e0910dd0b6177067b2138" name="lib/Horde/Pdf/Font/Helvetica.php" role="php" />
+   <file baseinstalldir="/" md5sum="b798b1766eda2f1061fa0ad8f6dac96a" name="lib/Horde/Pdf/Font/Helveticab.php" role="php" />
+   <file baseinstalldir="/" md5sum="a02cedffac1a055514872f14ee8ce102" name="lib/Horde/Pdf/Font/Helveticabi.php" role="php" />
+   <file baseinstalldir="/" md5sum="278361486eef734a859851125a89f205" name="lib/Horde/Pdf/Font/Helveticai.php" role="php" />
+   <file baseinstalldir="/" md5sum="57069646ff9655c9f877ea66a2252573" name="lib/Horde/Pdf/Font/Symbol.php" role="php" />
+   <file baseinstalldir="/" md5sum="a0794caefebc6399127ca1ee93230a83" name="lib/Horde/Pdf/Font/Times.php" role="php" />
+   <file baseinstalldir="/" md5sum="769bcca972c8116f821d04be38f2b399" name="lib/Horde/Pdf/Font/Timesb.php" role="php" />
+   <file baseinstalldir="/" md5sum="2616e4709e86943ba5ba061def437ade" name="lib/Horde/Pdf/Font/Timesbi.php" role="php" />
+   <file baseinstalldir="/" md5sum="1dacb7a01ba15aabc71e8401ed756fbe" name="lib/Horde/Pdf/Font/Timesi.php" role="php" />
+   <file baseinstalldir="/" md5sum="105771905c21b16b7c68573871ad506e" name="lib/Horde/Pdf/Font/Zapfdingbats.php" role="php" />
+   <file baseinstalldir="/" md5sum="264fe223796ded7c1be9864df66f553f" name="lib/Horde/Pdf/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="4bfd585c04a080bf5448f36f83b57152" name="lib/Horde/Pdf/Writer.php" role="php" />
+   <file baseinstalldir="/" md5sum="94ecd70973f328b5a24fd682df8362dd" name="test/Horde/Pdf/fixtures/20k_c1.txt" role="test" />
+   <file baseinstalldir="/" md5sum="7b9a2af245f8eb38b9ad868dc9dc3b28" name="test/Horde/Pdf/fixtures/20k_c2.txt" role="test" />
+   <file baseinstalldir="/" md5sum="66974662641267e5e4acf90f0bc06045" name="test/Horde/Pdf/fixtures/auto_break.pdf" role="test" />
+   <file baseinstalldir="/" md5sum="28444abc97754ab93ef80bb9dbbe2e2c" name="test/Horde/Pdf/fixtures/change_page.pdf" role="test" />
+   <file baseinstalldir="/" md5sum="2e36b1abc0ed95fc712567c74909a81a" name="test/Horde/Pdf/fixtures/header_footer_styles.pdf" role="test" />
+   <file baseinstalldir="/" md5sum="ef3a3bde296b0d203895f22133c61c2a" name="test/Horde/Pdf/fixtures/hello_world_compressed.pdf" role="test" />
+   <file baseinstalldir="/" md5sum="ef3a3bde296b0d203895f22133c61c2a" name="test/Horde/Pdf/fixtures/hello_world_uncompressed.pdf" role="test" />
+   <file baseinstalldir="/" md5sum="5a0ec8ea23e34001c950bb0b245ccc76" name="test/Horde/Pdf/fixtures/horde-power1.png" role="test" />
+   <file baseinstalldir="/" md5sum="efa2555d21d594cbbb36162cc302a34d" name="test/Horde/Pdf/fixtures/links.pdf" role="test" />
+   <file baseinstalldir="/" md5sum="8ac7a3c2fdfe37c5e3aa36b400a461f2" name="test/Horde/Pdf/fixtures/text_color.pdf" role="test" />
+   <file baseinstalldir="/" md5sum="f5b3a36dcc9ee585d00ce47cb23c390a" name="test/Horde/Pdf/fixtures/underline.pdf" role="test" />
+   <file baseinstalldir="/" md5sum="8bc9518b9c0576806c82d9413489d099" name="test/Horde/Pdf/AllTests.php" role="test" />
+   <file baseinstalldir="/" md5sum="0a5018f0726d4673850fece3ad4d72c0" name="test/Horde/Pdf/bootstrap.php" role="test" />
+   <file baseinstalldir="/" md5sum="d11870529445998fbec85e28a713fe12" name="test/Horde/Pdf/WriterTest.php" role="test" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+    <max>8.0.0alpha1</max>
+    <exclude>8.0.0alpha1</exclude>
+   </php>
+   <pearinstaller>
+    <min>1.7.0</min>
+   </pearinstaller>
+   <package>
+    <name>Horde_Exception</name>
+    <channel>pear.horde.org</channel>
+    <min>2.0.0</min>
+    <max>3.0.0alpha1</max>
+    <exclude>3.0.0alpha1</exclude>
+   </package>
+   <package>
+    <name>Horde_Util</name>
+    <channel>pear.horde.org</channel>
+    <min>2.0.0</min>
+    <max>3.0.0alpha1</max>
+    <exclude>3.0.0alpha1</exclude>
+   </package>
+  </required>
+  <optional>
+   <package>
+    <name>Horde_Test</name>
+    <channel>pear.horde.org</channel>
+    <min>2.1.0</min>
+    <max>3.0.0alpha1</max>
+    <exclude>3.0.0alpha1</exclude>
+   </package>
+  </optional>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="CHANGES" name="doc/Horde/Pdf/CHANGES" />
+   <install as="COPYING" name="doc/Horde/Pdf/COPYING" />
+   <install as="Horde/Pdf/Exception.php" name="lib/Horde/Pdf/Exception.php" />
+   <install as="Horde/Pdf/Writer.php" name="lib/Horde/Pdf/Writer.php" />
+   <install as="Horde/Pdf/Font/Courier.php" name="lib/Horde/Pdf/Font/Courier.php" />
+   <install as="Horde/Pdf/Font/Courierb.php" name="lib/Horde/Pdf/Font/Courierb.php" />
+   <install as="Horde/Pdf/Font/Courierbi.php" name="lib/Horde/Pdf/Font/Courierbi.php" />
+   <install as="Horde/Pdf/Font/Courieri.php" name="lib/Horde/Pdf/Font/Courieri.php" />
+   <install as="Horde/Pdf/Font/Helvetica.php" name="lib/Horde/Pdf/Font/Helvetica.php" />
+   <install as="Horde/Pdf/Font/Helveticab.php" name="lib/Horde/Pdf/Font/Helveticab.php" />
+   <install as="Horde/Pdf/Font/Helveticabi.php" name="lib/Horde/Pdf/Font/Helveticabi.php" />
+   <install as="Horde/Pdf/Font/Helveticai.php" name="lib/Horde/Pdf/Font/Helveticai.php" />
+   <install as="Horde/Pdf/Font/Symbol.php" name="lib/Horde/Pdf/Font/Symbol.php" />
+   <install as="Horde/Pdf/Font/Times.php" name="lib/Horde/Pdf/Font/Times.php" />
+   <install as="Horde/Pdf/Font/Timesb.php" name="lib/Horde/Pdf/Font/Timesb.php" />
+   <install as="Horde/Pdf/Font/Timesbi.php" name="lib/Horde/Pdf/Font/Timesbi.php" />
+   <install as="Horde/Pdf/Font/Timesi.php" name="lib/Horde/Pdf/Font/Timesi.php" />
+   <install as="Horde/Pdf/Font/Zapfdingbats.php" name="lib/Horde/Pdf/Font/Zapfdingbats.php" />
+   <install as="Horde/Pdf/AllTests.php" name="test/Horde/Pdf/AllTests.php" />
+   <install as="Horde/Pdf/bootstrap.php" name="test/Horde/Pdf/bootstrap.php" />
+   <install as="Horde/Pdf/WriterTest.php" name="test/Horde/Pdf/WriterTest.php" />
+   <install as="Horde/Pdf/fixtures/20k_c1.txt" name="test/Horde/Pdf/fixtures/20k_c1.txt" />
+   <install as="Horde/Pdf/fixtures/20k_c2.txt" name="test/Horde/Pdf/fixtures/20k_c2.txt" />
+   <install as="Horde/Pdf/fixtures/auto_break.pdf" name="test/Horde/Pdf/fixtures/auto_break.pdf" />
+   <install as="Horde/Pdf/fixtures/change_page.pdf" name="test/Horde/Pdf/fixtures/change_page.pdf" />
+   <install as="Horde/Pdf/fixtures/header_footer_styles.pdf" name="test/Horde/Pdf/fixtures/header_footer_styles.pdf" />
+   <install as="Horde/Pdf/fixtures/hello_world_compressed.pdf" name="test/Horde/Pdf/fixtures/hello_world_compressed.pdf" />
+   <install as="Horde/Pdf/fixtures/hello_world_uncompressed.pdf" name="test/Horde/Pdf/fixtures/hello_world_uncompressed.pdf" />
+   <install as="Horde/Pdf/fixtures/horde-power1.png" name="test/Horde/Pdf/fixtures/horde-power1.png" />
+   <install as="Horde/Pdf/fixtures/links.pdf" name="test/Horde/Pdf/fixtures/links.pdf" />
+   <install as="Horde/Pdf/fixtures/text_color.pdf" name="test/Horde/Pdf/fixtures/text_color.pdf" />
+   <install as="Horde/Pdf/fixtures/underline.pdf" name="test/Horde/Pdf/fixtures/underline.pdf" />
+  </filelist>
+ </phprelease>
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0alpha1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-03-08</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First alpha release for Horde 4.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0beta1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-03-16</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First beta release for Horde 4.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0RC1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-03-22</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First release candidate for Horde 4.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0RC2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-03-29</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* Second release candidate for Horde 4.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-04-06</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First stable release for Horde 4.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-08-30</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Fix setting Courier fonts with font style (PEAR Bug #18550).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-11-01</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [gwr] Add missing font files.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.0alpha1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-07-05</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First alpha release for Horde 5.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.0beta1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-07-19</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First beta release for Horde 5.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-10-30</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First stable release for Horde 5.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-11-19</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Use new Horde_Test layout.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-01-09</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Fix swapped getFormatHeight() and getFormatWidth() methods (Bug #11762).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.3</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-02-11</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Fix getFormatHeight() and getFormatWidth() in landscape mode.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.4</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2015-01-09</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Add Composer definition.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.5</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2015-04-28</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Fix issues with certain locales like Turkish.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.6</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2015-10-20</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mjr] Avoid some PHP warnings.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.7</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2016-02-01</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Mark PHP 7 as supported.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.8</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2019-11-03</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mjr] PHP 7.4 compatibility fixes (Remi Collet &lt;remi@famillecollet.com&gt;, PR #1).
+   </notes>
+  </release>
+ </changelog>
+</package>
